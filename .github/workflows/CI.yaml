@@ -14,3 +14,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install
         working-directory: ./hello-world
+      - name: Build project
+        run: npm run build
+        working-directory: ./hello-world
